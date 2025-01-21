@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+    </head>
+    <body>
+        <form>
+            <label for="name">NAME:</label>
+            <input type="text" name="name" id="name" required><br><br>
+            <label for="password">PASSWORD:</label>
+            <input type="password" name="password" id="password" required><br><br>
+
+            <div>
+            <input type="radio" name="hl" id="HTML">
+            <label for="HTML">HTML</label><br>
+            <input type="radio" name="hl" id="css">
+            <label for="css">CSS</label><br>
+            <input type="radio" name="hl" id="js">
+            <label for="js">JS</label><br>
+
+            <label for="choose">CHOOSE</label>
+            <select id="choose" name="choose">
+                <option value="alagan">ALAGAN</option>
+                <option value="madurai">MADURAI ALAGAN</option>
+                <option value="tce">TCE ALAGAN</option>
+                <option value="male">ON ALAGAN</option>
+            </select>
+
+            <form action="/action_page.php">
+                <fieldset>
+                  <legend>Personalia:</legend>
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname" value="John"><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                  <input type="submit" value="Submit">
+                </fieldset>
+              </form>
+
+              <form action="/action_page.php">
+                <input list="browsers">
+                <datalist id="browsers">
+                  <option value="Edge">
+                  <option value="Firefox">
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+                </datalist>
+              </form>
+
+            <button type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </body>
+</html>
