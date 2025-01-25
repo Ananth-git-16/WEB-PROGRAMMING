@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>🎉 Social Media Management System 🎉</h1>
-        <form id="socialMediaForm" method="get">
+        <form id="socialMediaForm" method="get" target="index.html">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
       
@@ -27,10 +27,47 @@
       
             <label for="tags">Tags (comma-separated):</label>
             <input type="text" id="tags" name="tags" placeholder="e.g., travel, food, lifestyle">
+
             <div class="form-group">
                 <label for="postContent">Post Content:</label>
                 <textarea id="postContent" name="postContent" rows="4" required></textarea>
             </div>
+
+            <!-- New Form Elements -->
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">Select a category</option>
+                <option value="news">News</option>
+                <option value="updates">Updates</option>
+                <option value="events">Events</option>
+                <option value="promotions">Promotions</option>
+            </select>
+
+            <fieldset>
+                <legend>Post Visibility:</legend>
+                <label>
+                    <input type="radio" name="visibility" value="public" required> Public
+                </label>
+                <label>
+                    <input type="radio" name="visibility" value="private"> Private
+                </label>
+                <label>
+                    <input type="radio" name="visibility" value="friends"> Friends Only
+                </label>
+            </fieldset>
+
+            <label for="notifications">Receive Notifications:</label>
+            <label>
+                <input type="checkbox" id="notifications" name="notifications" value="yes"> Yes, I want to receive notifications
+            </label>
+
+            <label for="postDate">Post Date:</label>
+            <input type="date" id="postDate" name="postDate" required>
+
+            <label for="fileUpload">Upload an Image:</label>
+            <input type="file" id="fileUpload" name="fileUpload" accept="image/*">
+            <br><br>
+
             <button type="submit">🚀 Submit Post 🚀</button>
         </form>
         <div id="responseMessage" class="response-message"></div>
